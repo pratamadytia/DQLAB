@@ -1,1 +1,36 @@
+select * from ms_produk
 
+select nama_produk from Ms_produk
+
+select nama_produk, harga from ms_produk
+
+select nama_produk, harga from ms_produk
+limit 5
+
+select distinct nama_customer, alamat from ms_pelanggan	
+
+select ms_produk.kode_produk from ms_produk
+
+select no_urut As nomor, nama_produk As nama from ms_produk
+
+SELECT no_urut  nomor, nama_produk nama From ms_produk
+
+SELECT ms_produk.harga AS harga_jual from ms_produk 				
+
+SELECT * FROM ms_produk t2;
+
+SELECT t2.nama_produk, t2.harga from ms_produk t2
+
+select * From Ms_produk 
+where nama_produk = 'Tas Travel Organizer DQLab';
+
+Select * from Ms_produk where nama_produk=  'Gantungan Kunci DQLab' OR  nama_produk = 'Tas Travel Organizer DQLab' OR  nama_produk ='Flashdisk DQLab 64 GB'
+
+select * from ms_produk where harga > 50000
+
+select * from ms_produk where nama_produk ='Gantungan Kunci DQLab' And harga < 50000
+
+SELECT kode_pelanggan, nama_produk, qty, harga, qty*harga AS total
+FROM tr_penjualan
+WHERE qty*harga >= 100000
+ORDER BY total DESC;
